@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloudflare Pagesテスト用</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Inter',sans-serif;background:#f8f9fa;color:#333;line-height:1.6;display:flex;flex-direction:column;min-height:10vh;}
+    header{background:#C0C0C0;color:#fff;padding:10px 20px;text-align:center; display: flex; justify-content: space-between;}
+    header h1{font-size:2.5rem;}
+    header p{font-size:1.2rem;opacity:0.9;}
+    main{flex:1;padding:2rem;max-width:960px;margin:auto;}
+    .section{background:#fff;border-radius:12px;padding:2rem;box-shadow:0 8px 16px rgba(0,0,0,0.05);margin-bottom:2rem;transition:transform 0.3s;}
+    footer{text-align:center;font-size:0.9rem;padding:1rem;color:#888;}
+    ul{
+      display: flex;
+    }
+    li{
+      list-style: none;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-list">
+      <ul>
+        <li class="list1">Home</li>
+        <li class="list2">Diary</li>
+        <li class="list3">UEC_REVIEW</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>このページについて</h2>
+      <p>
+        このサイトはHTML/CSS/JavaScriptだけで構成されており、Cloudflare Pagesで無料でホスティングされています。
+      </p>
+    </section>
+    <!--
+    <section class="section">
+      <h2>使い方</h2>
+      <ol>
+        <li>このファイルをGitHubにpush</li>
+        <li>Cloudflare Pagesに接続</li>
+        <li>数秒でサイトが公開されます</li>
+      </ol>
+    </section>
+    -->
+  </main>
+  
+  <script>
+    document.getElementById('alertBtn').addEventListener('click', () => {alert('参考になったら「いいね」をお願いします!');});
+  </script>
+</body>
+</html>
